@@ -44,7 +44,7 @@ func TestPasswordHashing(t *testing.T) {
 	}
 }
 
-// Benchmarks SHA256 on 16K of random data.
+// BenchmarkSHA256; SHA256 on 16K of random data.
 func BenchmarkSHA256(b *testing.B) {
 	data, err := ioutil.ReadFile("testdata/random")
 	if err != nil {
@@ -56,7 +56,7 @@ func BenchmarkSHA256(b *testing.B) {
 	}
 }
 
-// Benchmarks SHA512/256 on 16K of random data.
+// BenchmarkSHA512_256; SHA512/256 on 16K of random data.
 func BenchmarkSHA512_256(b *testing.B) {
 	data, err := ioutil.ReadFile("testdata/random")
 	if err != nil {
